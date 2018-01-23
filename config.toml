@@ -2,3 +2,8 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "Talkyard: a commenting system for Hugo"
 theme = "pickles"
+
+[params]
+
+talkyardServerUrl = "https://comments-for-hugo-demo.talkyard.net"
+# talkyardScriptUrl = "https://comments-for-hugo-demo.talkyard.net/-/talkyard-comments.min.js"
