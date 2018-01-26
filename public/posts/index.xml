@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Talkyard: a commenting system for Hugo</title>
+    <link>https://hugo-demo.talkyard.io/posts/</link>
+    <description>Recent content in Posts on Talkyard: a commenting system for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 26 Jan 2018 00:00:02 +0100</lastBuildDate>
+    
+	<atom:link href="https://hugo-demo.talkyard.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Demo and installation instructions</title>
+      <link>https://hugo-demo.talkyard.io/posts/demo-and-instructions/</link>
+      <pubDate>Fri, 26 Jan 2018 00:00:02 +0100</pubDate>
+      
+      <guid>https://hugo-demo.talkyard.io/posts/demo-and-instructions/</guid>
+      <description>Talkyard is a new embedded commenting system for Hugo and other static site generators. It&amp;rsquo;s open source so you can install it for free on your own server. There&amp;rsquo;s hosting, if you don&amp;rsquo;t want to maintain your own server. No ads, no tracking.
+This website is a static Hugo blog, with Talkyard comments below each blog post — look at the bottom of the pages. Talkyard is forum software too, with chat and question-answers features — so you can create a community for your website, integrated with the blog comments.</description>
+    </item>
+    
+    <item>
+      <title>What do you like about Hugo?</title>
+      <link>https://hugo-demo.talkyard.io/posts/like-about-hugo/</link>
+      <pubDate>Fri, 26 Jan 2018 00:00:01 +0100</pubDate>
+      
+      <guid>https://hugo-demo.talkyard.io/posts/like-about-hugo/</guid>
+      <description>Why did you choose Hugo instead of some of the other static site generators? Which others did you know about, and evaluated? How does Hugo work for you, in comparison to what you expected / hoped? Anything makes you annoyed?</description>
+    </item>
+    
+  </channel>
+</rss>

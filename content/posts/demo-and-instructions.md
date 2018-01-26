@@ -1,7 +1,7 @@
 ---
 title: "Demo and installation instructions"
-date: 2018-01-23T00:00:02+01:00
-draft: true
+date: 2018-01-26T00:00:02+01:00
+draft: false
 discussionId: demo-and-instructions
 ---
 
