@@ -1,6 +1,6 @@
 ---
 title: "What do you like about Hugo?"
-date: 2018-01-26T00:00:01+01:00
+date: 2018-02-05T00:00:01+01:00
 draft: false
 discussionId: like-about-hugo
 ---

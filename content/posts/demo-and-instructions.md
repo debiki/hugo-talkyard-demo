@@ -1,6 +1,6 @@
 ---
 title: "Demo and installation instructions"
-date: 2018-01-26T00:00:02+01:00
+date: 2018-02-05T00:00:02+01:00
 draft: false
 discussionId: demo-and-instructions
 ---
@@ -8,26 +8,19 @@ discussionId: demo-and-instructions
 
 Talkyard is a new embedded commenting system for Hugo and other static site generators.
 It's [open source](https://github.com/debiki/ed-server/) so you can install it for free on your own server.
-There's [hosting](https://www.talkyard.io), if you don't want to maintain your own server.
+There's [hosting](https://www.talkyard.io) for €3, if you don't want to maintain your own server.
 No ads, no tracking.
-
-This website is a static Hugo blog, with Talkyard comments below each blog post — look at the bottom of the pages.
-Talkyard is forum software too, with chat and question-answers features —
-so you can create a community for your website, integrated with the blog comments.
 
 Demo video:
 
 <iframe src="https://player.vimeo.com/video/249611399" width="684" height="385" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-<!--
-<iframe src="https://player.vimeo.com/video/249611399" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<p><a href="https://vimeo.com/249611399">ed-emb-cmts-(3)</a> from <a href="https://vimeo.com/user78434986">Magnus Lindberg</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-
-<iframe width="684" height="385" src="https://www.youtube.com/embed/2L0eYcsCcbE" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
--->
-
 <br>
-<a href="/like-about-hugo">Here's a demo Hugo discussion.</a>
+This website is a static Hugo blog, with Talkyard comments below each blog post — look at the bottom of the pages.
+Talkyard is forum software too, with chat and question-answers features —
+so you can create a community for your website, integrated with the blog comments.
+
+<a href="/posts/like-about-hugo">Here's a demo Hugo discussion.</a>
 
 <a href="https://www.kajmagnus.blog/new-embedded-comments">Longer demo discussion (the one in the video).</a>
 <br>
@@ -35,7 +28,7 @@ Demo video:
 
 ### Quick test if this is for you
 
-Here're three quick steps for you to try out Talkyard on your own site, without signing up or installing anything:
+Here're two quick steps for you to try out Talkyard on your own site, without signing up or installing anything:
 
 1. Add this where you want the commetns to appear, for example, in
    `./themes/YOUR_THEME_NAME/layouts/_default/single.html`,
@@ -65,14 +58,13 @@ Are you satisfied with how it looks? If not, please tell us/me: <https://www.tal
 
 ### Real installation instructions
 
-If you like it, then go to <https://www.talkyard.io>, click Create Community and choose Blog Comments.
+Do steps 1 and 2 above, then go to <https://www.talkyard.io>, click Create Community and choose Blog Comments.
 Follow the instructions — and, in `config.toml`, change the `talkyardServerUrl` value
 to the address of your new Talkyard blog comments site,
 e.g. `https://comments-for-your-blog.talkyard.net`.
 
 You should also add a frontmatter `discussionId: per-discussion-id` to each blog post / article,
 so you can change the URL to the blog post, without the discussion disappearing.
-(Without a discussion id, discussions are looked up, by page URL.)
 
 Again, note that Talkyard also is forum software, with chat and Q&A features — you can create a community for your website, integrated with the blog comments.
 
