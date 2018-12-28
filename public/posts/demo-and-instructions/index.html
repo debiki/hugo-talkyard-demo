@@ -61,29 +61,28 @@
   <section id="js-article" class="p-article__body">
     
 
-<p>Talkyard is a new embedded commenting system for Hugo and other static site generators.
-It&rsquo;s <a href="https://github.com/debiki/ed-server/">open source</a> so you can install it for free on your own server.
-There&rsquo;s <a href="https://www.talkyard.io">hosting</a> for €3, if you don&rsquo;t want to maintain your own server.
-No ads, no tracking.</p>
+<p>Talkyard is an embedded commenting system for Hugo and other static site generators.
+It&rsquo;s <a href="https://github.com/debiki/talkyard/">open source</a>; you can install it for free on your server.
+There&rsquo;s serverless <a href="https://www.talkyard.io">hosting</a> — no ads, no tracking, free for low traffic blogs.</p>
 
 <p>Demo video:</p>
 
 <iframe src="https://player.vimeo.com/video/249611399" width="684" height="385" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 <p><br>
-This website is a static Hugo blog, with Talkyard comments below each blog post — look at the bottom of the pages.
-Talkyard is forum software too, with chat and question-answers features —
-so you can create a community for your website, integrated with the blog comments.</p>
+This website is a static Hugo blog, with Talkyard comments — look at the bottom of the pages.
+Talkyard is forum software too, with chat and question-answers features:
+you can create a community for your website, integrated with the blog comments.</p>
 
 <p><a href="/posts/like-about-hugo">Here&rsquo;s a demo Hugo discussion.</a></p>
 
-<p><a href="https://www.kajmagnus.blog/new-embedded-comments">Longer demo discussion (the one in the video).</a>
+<p><a href="https://www.kajmagnus.blog/new-embedded-comments">Longer demo discussion</a> (the one in the video).
 <br>
 <br></p>
 
 <h3 id="quick-test-if-this-is-for-you">Quick test if this is for you</h3>
 
-<p>Here&rsquo;re two quick steps for you to try out Talkyard on your own site, without signing up or installing anything:</p>
+<p>Two steps for trying out Talkyard, without signing up or getting a server:</p>
 
 <ol>
 <li><p>Add this where you want the commetns to appear, for example, in
@@ -91,7 +90,7 @@ so you can create a community for your website, integrated with the blog comment
 in a new <code>&lt;section&gt;</code> after the blog post <code>.Content</code>:</p>
 
 <pre><code>&lt;script&gt;talkyardServerUrl='{{ .Site.Params.talkyardServerUrl }}';&lt;/script&gt;
-&lt;script async defer src=&quot;{{ .Site.Params.talkyardScriptUrl | default &quot;https://cdn.talkyard.net/-/talkyard-comments.min.js&quot; }}&quot;&gt;&lt;/script&gt;
+&lt;script async defer src=&quot;{{ .Site.Params.talkyardScriptUrl | default &quot;https://c1.ty-cdn.net/-/talkyard-comments.min.js&quot; }}&quot;&gt;&lt;/script&gt;
 &lt;!-- You can specify a per page discussion id on the next line, if your URLs might change. --&gt;
 &lt;div class=&quot;talkyard-comments&quot; data-discussion-id=&quot;{{ .Params.discussionId }}&quot; style=&quot;margin-top: 45px;&quot;&gt;
 &lt;noscript&gt;Please enable Javascript to view comments.&lt;/noscript&gt;
@@ -111,11 +110,9 @@ talkyardServerUrl = &quot;https://comments-demo.talkyard.io&quot;
 
 <p>Now, look at the comment section that should appear below the blog posts. You can post test comments <strong>but</strong> they&rsquo;ll disappear later on, some day (because you use a demo test account).</p>
 
-<p>Are you satisfied with how it looks? If not, please tell us/me: <a href="https://www.talkyard.io/forum/latest/support">https://www.talkyard.io/forum/latest/support</a>; maybe we can make it look better.</p>
+<h3 id="real-installation">Real installation</h3>
 
-<h3 id="real-installation-instructions">Real installation instructions</h3>
-
-<p>Do steps 1 and 2 above, then go to <a href="https://www.talkyard.io">https://www.talkyard.io</a>, click Create Community and choose Blog Comments.
+<p>Do steps 1 and 2 above, then go to <a href="https://www.talkyard.io/plans">https://www.talkyard.io/plans</a> and choose Blog Comments.
 Follow the instructions — and, in <code>config.toml</code>, change the <code>talkyardServerUrl</code> value
 to the address of your new Talkyard blog comments site,
 e.g. <code>https://comments-for-your-blog.talkyard.net</code>.</p>
@@ -123,15 +120,12 @@ e.g. <code>https://comments-for-your-blog.talkyard.net</code>.</p>
 <p>You should also add a frontmatter <code>discussionId: per-discussion-id</code> to each blog post / article,
 so you can change the URL to the blog post, without the discussion disappearing.</p>
 
-<p>Again, note that Talkyard also is forum software, with chat and Q&amp;A features — you can create a community for your website, integrated with the blog comments.</p>
-
-<p>You can ask for help in <a href="https://www.talkyard.io/forum/latest/support">the support forum</a>, and <a href="https://www.talkyard.io/forum/latest/ideas">suggest ideas</a>.
-Or post a comment below on this page (test comments are fine too).</p>
+<p>You can ask for help in the <a href="https://www.talkyard.io/forum/latest/support">support forum</a> over at www.Talkyard.io.</p>
 
   </section>
   <section>
     <script>talkyardServerUrl='https:\/\/comments-for-hugo-demo.talkyard.net';</script>
-    <script async defer src="https://cdn.talkyard.net/-/talkyard-comments.min.js"></script>
+    <script async defer src="https://c1.ty-cdn.net/-/talkyard-comments.min.js"></script>
     
     <div class="talkyard-comments" data-discussion-id="demo-and-instructions" style="margin-top: 45px;">
     <noscript>Please enable Javascript to view comments.</noscript>
