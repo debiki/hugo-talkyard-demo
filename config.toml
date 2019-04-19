@@ -5,5 +5,8 @@ theme = "pickles"
 
 [params]
 
+# talkyardServerUrl = "https://comments-demo.talkyard.io"
+
 talkyardServerUrl = "https://comments-for-hugo-demo.talkyard.net"
 # talkyardScriptUrl = "https://comments-for-hugo-demo.talkyard.net/-/talkyard-comments.min.js"
+

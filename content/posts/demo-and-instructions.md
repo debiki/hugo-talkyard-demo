@@ -8,7 +8,7 @@ discussionId: demo-and-instructions
 
 Talkyard is an embedded commenting system for Hugo and other static site generators.
 It's [open source](https://github.com/debiki/talkyard/); you can install it for free on your server.
-There's serverless [hosting](https://www.talkyard.io) — no ads, no tracking, free for low traffic blogs.
+There's serverless [hosting](https://www.talkyard.io/blog-comments) — no ads, no tracking.
 
 Demo video:
 
@@ -42,12 +42,12 @@ Two steps for trying out Talkyard, without signing up or getting a server:
         <a href="https://www.talkyard.io">Talkyard</a>.</p>
         </div>
 
-1. Add this config value, and use a dummy test comments account:
+1. Add this config value in the `[params]` section, and use a demo comments account:
 
         // In config.toml:
-        [params]
+        [params]       <——— note, must be this section
         talkyardServerUrl = "https://comments-demo.talkyard.io"
-        ...
+
 
 
 Now, look at the comment section that should appear below the blog posts. You can post test comments **but** they'll disappear later on, some day (because you use a demo test account).
