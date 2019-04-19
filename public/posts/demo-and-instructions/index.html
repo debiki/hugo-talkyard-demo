@@ -25,7 +25,7 @@
   
   
   
-  <meta name="generator" content="Hugo 0.34" /><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+  <meta name="generator" content="Hugo 0.54.0" /><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
   <link rel="stylesheet" href="https://hugo-demo.talkyard.io/css/style.css" />
   <script type="text/javascript" src="https://hugo-demo.talkyard.io/js/bundle.js"></script>
   
@@ -63,7 +63,7 @@
 
 <p>Talkyard is an embedded commenting system for Hugo and other static site generators.
 It&rsquo;s <a href="https://github.com/debiki/talkyard/">open source</a>; you can install it for free on your server.
-There&rsquo;s serverless <a href="https://www.talkyard.io">hosting</a> — no ads, no tracking, free for low traffic blogs.</p>
+There&rsquo;s serverless <a href="https://www.talkyard.io/blog-comments">hosting</a> — no ads, no tracking.</p>
 
 <p>Demo video:</p>
 
@@ -99,12 +99,11 @@ in a new <code>&lt;section&gt;</code> after the blog post <code>.Content</code>:
 &lt;/div&gt;
 </code></pre></li>
 
-<li><p>Add this config value, and use a dummy test comments account:</p>
+<li><p>Add this config value in the <code>[params]</code> section, and use a demo comments account:</p>
 
 <pre><code>// In config.toml:
-[params]
+[params]       &lt;——— note, must be this section
 talkyardServerUrl = &quot;https://comments-demo.talkyard.io&quot;
-...
 </code></pre></li>
 </ol>
 
